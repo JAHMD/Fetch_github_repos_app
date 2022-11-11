@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+/* body {
+} */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 710px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.flex-cetner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-repos {
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background-color: #eee;
+}
+.get-repos-container {
+  width: 380px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get-repos-container #user-name {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  caret-color: #607d8b;
+  font-size: 1rem;
+  color: hsl(200deg 18% 30%);
+  border: 2px solid hsl(231 48% 48% / 0.5);
+  outline: none;
+}
+@media (max-width: 768px) {
+  .get-repos-container #user-name {
+    margin-bottom: 1rem;
+  }
+  .get-repos-container {
+    flex-direction: column;
+  }
+  .get-repos-container .submit-btn,
+  .get-repos-container #user-name {
+    width: 100%;
+  }
+}
+.get-repos-container #user-name::placeholder {
+  color: hsl(200deg 18% 30% / 50%);
+}
+.get-repos-container .submit-btn {
+  height: 45px;
+  padding: 0.7rem 1rem;
+  background-color: hsl(231 48% 30% / 1);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s background-color;
+}
+.get-repos-container .submit-btn:hover {
+  background-color: rgb(53, 67, 148);
+}
+.repos-section {
+  min-height: calc(100vh - (109.6px + 24px));
+  background-color: #eee;
+}
+@media (max-width: 768px) {
+  .repos-section {
+    min-height: calc(100vh - (170.6px + 24px));
+  }
+}
+.repos-container {
+  padding: 2rem;
+  color: hsl(200deg 18% 30%);
+}
+.repos-container .no-repos {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  grid-column: span 5;
+  background-color: hsl(0deg 0% 100%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.repos-container .repo-container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+.repos-container .repo-container:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+.repos-container .repo-container .repo-name {
+  margin-right: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.repos-container .repo-container .stars,
+.repos-container .repo-container .repo-url {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 0.85rem;
+}
+.repos-container .repo-container .stars {
+  min-width: 100px;
+  background-color: #3f51b5;
+  margin-right: 0.8rem;
+}
+.repos-container .repo-container .repo-url {
+  background-color: #673ab7;
+  text-decoration: none;
+  transition: 0.4s background-color;
+  font-weight: bold;
+}
+.repos-container .repo-container .repo-url:hover {
+  background-color: #542c9a;
+}
