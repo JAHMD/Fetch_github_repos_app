@@ -1,0 +1,8 @@
+- get repos section => done
+- repos section => done
+- set/get user name 
+- get user repos by clicking the button 
+- add repos names, stars number and visit button to repo element
+- add repos to the repos section 
+- clear repos section is there's no repos
+- repos api => "https://api.github.com/users/JAHMD/repos"
